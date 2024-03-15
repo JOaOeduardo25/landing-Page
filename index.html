@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Festa Internacional</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Festa Internacional</h1>
+    <p>Seja o primeiro a saber sobre a próxima festa!</p>
+  </header>
+  <section id="signup">
+    <h2>Lista de Espera</h2>
+    <form id="signup-form">
+      <input type="email" id="email" placeholder="Seu e-mail" required>
+      <button type="submit">Inscrever-se</button>
+    </form>
+    <p id="message"></p>
+  </section>
+
+  <section id="info">
+    <div class="background-image">
+      <!-- Adicione a URL da imagem de fundo desejada -->
+      <img src="./landingPage.jpeg" alt="background-image">
+    </div>
+    <div class="overlay">
+      <div class="button-container">
+        <button id="contact-btn">Contato</button>
+        <button id="services-btn">Serviços</button>
+        <button id="learn-more-btn">Saiba Mais</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('contact-btn').addEventListener('click', function() {
+      window.location.href = 'contato.html'; // Redireciona para a página de contato
+    });
+
+    document.getElementById('services-btn').addEventListener('click', function() {
+      window.location.href = 'servicos.html'; // Redireciona para a página de serviços
+    });
+
+    document.getElementById('learn-more-btn').addEventListener('click', function() {
+      window.location.href = 'informacoes_evento.html'; // Redireciona para a página de "Saiba Mais"
+    });
+  </script>
+</body>
+</html>
+
+
